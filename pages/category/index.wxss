@@ -1,0 +1,59 @@
+page {
+    height: 100%;
+}
+
+.cates {
+    width: 100%;
+}
+
+.cates_container {
+    display: flex;
+    height: 92vh;
+}
+
+.left_scroll {
+    flex: 3;
+    text-align: center;
+}
+
+.left_scroll view {
+    padding: 20rpx;
+    background-color: #fff;
+    color: black;
+}
+
+.left_scroll .active {
+    background-color: #069e91;
+    color: #fff;
+}
+
+.right_scroll {
+    flex: 7;
+    
+}
+
+.fenge {
+    padding: 5rpx;
+    color: #ccc;
+}
+
+.goods_group {
+    margin-bottom: 20rpx;
+}
+
+.goods_title {
+    text-align: center;
+    font-size: 40rpx;
+    margin-bottom: 10rpx;
+}
+
+.goods_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goods_list navigator {
+    width: 33.33%;
+    text-align: center;
+    padding: 5rpx 15rpx;
+}

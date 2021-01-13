@@ -1,0 +1,16 @@
+<Tabs tabs="{{tabs}}" bindchangeActive="handleItemChange">
+    <view class="orser_main">
+        <view class="order_item" wx:for="{{orders}}" wx:key="order_id">
+            <view class="order_xiang">
+                <view>订单编号</view>
+                <view>订单价格</view>
+                <view>订单日期</view>
+            </view>
+            <view class="order_mingxi">
+                <view >{{item.order_number}}</view>
+                <view >￥{{item.total_price}}</view>
+                <view >{{item.create_time_cn}}</view>
+            </view>
+        </view>
+    </view>
+</Tabs>

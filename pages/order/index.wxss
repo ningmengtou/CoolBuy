@@ -1,0 +1,25 @@
+.order_item {
+    display: flex;
+    border-bottom: 1rpx solid #ccc;
+    padding-top: 10rpx;
+}
+
+.order_xiang {
+    flex: 1;
+    padding-left: 20rpx;
+}
+
+.order_xiang view,
+.order_mingxi view {
+    padding: 10rpx;
+}
+
+.order_mingxi {
+    flex: 4;
+    padding-right: 20rpx;
+    text-align: right;
+}
+
+.order_mingxi view:nth-child(2) {
+    color: red;
+}

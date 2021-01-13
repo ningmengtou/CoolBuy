@@ -1,0 +1,41 @@
+page {
+    background-color: #ccc;
+}
+
+.search_wrap {
+    display: flex;
+    height: 60rpx;
+    margin: 20rpx;
+}
+
+.search_wrap .ipt {
+    flex: 1;
+    height: 100%;
+    margin-right: 15rpx;
+    background-color: #fff;
+    padding-left: 20rpx
+}
+
+.search_wrap .btn {
+    height: 100%;
+    width: 150rpx;
+    font-size: 24rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_content {
+    margin: 0 20rpx;
+}
+
+.search_item {
+    background-color: #fff;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 1rpx solid rgb(139, 125, 125);
+    padding: 0 10rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

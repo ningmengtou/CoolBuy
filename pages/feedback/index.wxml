@@ -1,0 +1,21 @@
+<Tabs tabs="{{tabs}}" bindchangeActive="handleItemChange">
+    <view class="question_wrap">
+        <view class="questions">问题的种类</view>
+        <view class="ques_all">
+            <view class="ques_item">功能建议</view>
+            <view class="ques_item">购买遇到问题</view>
+            <view class="ques_item">性能问题</view>
+            <view class="ques_item">其他</view>
+        </view>
+        <view class="suggest">
+            <textarea class="textarea" placeholder="请描述一下你的问题" value="{{textareaValue}}" bindinput="textareaChange"></textarea>
+            <view class="fb_tool">
+                <button class="fb_btn" bindtap="addImage">+</button>
+                <Upimg wx:for="{{imagePath}}" wx:key="*this" currentImg="{{item}}" bindtap="removeTmg" data-index="{{index}}"></Upimg>
+            </view>
+        </view>
+        <view class="form_btn_wrap">
+            <button class="form_btn" bindtap="sbmitTap">提交</button>
+        </view>
+    </view>
+</Tabs>

@@ -1,0 +1,155 @@
+page {
+    background-color: #edece8;
+}
+
+.user_info_wrap {
+    height: 50vh;
+    overflow: hidden;
+    background-color: #069e91;
+    position: relative;
+}
+
+.btn navigator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    padding: 20rpx 0;
+    text-align: center;
+    border: 5rpx solid rgb(67, 67, 240);
+    border-radius: 20rpx;
+    color: #fff;
+    font-weight: 600;
+    font-size: 36rpx;
+    text-indent: 50rpx;
+    letter-spacing: 50rpx;
+}
+
+.user_img_wrap {
+    position: relative;
+}
+
+.user_bg {
+    height: 51vh;
+    /* 高斯模糊 */
+    filter: blur(6rpx);
+}
+
+.user_info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.user_avatar {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.user_nickName {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34rpx;
+    letter-spacing: 2rpx;
+}
+
+.user_content {
+    position: relative;
+}
+
+.user_main {
+    position: absolute;
+    width: 90%;
+    top: -70rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    margin-bottom: 100rpx;
+}
+
+.history_wrap {
+    display: flex;
+}
+
+.his_item {
+    flex: 1;
+    display: flex;
+    padding: 10rpx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.his_num {
+    color: red;
+    margin-bottom: 10rpx;
+}
+
+.order_wrap {
+    border-top: 20rpx solid #edece8;
+}
+
+.order_title {
+    border-bottom: 1rpx solid #ccc;
+    padding: 15rpx;
+    font-size: 30rpx;
+}
+
+.order_all {
+    display: flex;
+}
+
+.order_item {
+    flex: 1;
+    display: flex;
+    padding: 10rpx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_icon {
+    margin: 10rpx;
+    color: red;
+    font-size: 45rpx;
+}
+
+.address_wrap {
+    border-top: 20rpx solid #edece8;
+    padding: 15rpx;
+    font-size: 30rpx;
+}
+
+.idea_wrap {
+    border-top: 20rpx solid #edece8;
+}
+
+.idea_item {
+    padding: 15rpx;
+    font-size: 30rpx;
+}
+
+.idea_wrap .idea_item:nth-child(1),
+.idea_wrap .idea_item:nth-child(2) {
+    border-bottom: 1rpx solid #ccc;
+}
+
+.share_wrap {
+    border-top: 20rpx solid #edece8;
+}
+
+.share_item {
+    padding: 15rpx;
+    font-size: 30rpx;
+}

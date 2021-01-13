@@ -1,0 +1,36 @@
+<view class="cool_index">
+    <!-- 搜索框开始 -->
+    <SearchInput></SearchInput>
+    <!-- 轮播图开始 -->
+    <view class="index_swiper">
+        <!-- swiper 有默认高度 需要根据图片的高度来指定高度 -->
+        <swiper autoplay circular interval="1500" indicator-dots indicator-color="rgba(0,0,0,0.4)" indicator-active-color="#fff">
+            <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+                <navigator url="{{item.navigator_url}}">
+                    <image src="{{item.image_src}}" mode="widthFix" />
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 分类导航开始 -->
+    <view class="index_cate" >
+        <navigator wx:for="{{catitemsList}}" wx:key="index" url="/pages/category/index" open-type="switchTab">
+            <image src="{{item.image_src}}" mode="widthFix" />
+        </navigator>
+    </view>
+    <!-- 楼层图开始 -->
+    <view class="index_floor">
+        <view class="floor_item" wx:for="{{floordataList}}" wx:key="name" wx:for-item="i">
+            <!-- 标题 -->
+            <view class="floor_title">
+                <image src="{{i.floor_title.image_src}}" mode="widthFix"/>
+            </view>
+            <!-- 内容 -->
+            <view class="floor_list">
+                <navigator wx:for="{{i.product_list}}" wx:key="name" url="{{item.navigator_url}}">
+                    <image src="{{item.image_src}}" mode="{{index===0?'widthFix':'scaleToFill'}}" />
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

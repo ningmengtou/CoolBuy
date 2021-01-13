@@ -1,0 +1,114 @@
+page {
+    padding-bottom: 90rpx;
+}
+.address_btn {
+    padding: 20rpx;
+}
+.address_info {
+    padding: 20rpx;
+}
+.name_tel {
+    display: flex;
+    margin-bottom: 5rpx;
+}
+.name_tel text {
+    flex: 1;
+}
+.cart_title {
+    border-bottom: 1rpx solid #ccc;
+    border-top: 1rpx solid #ccc;
+    font-size: 45rpx;
+    padding: 20rpx;
+}
+.cart_list {
+    display: flex;
+    border-bottom: 1rpx solid #ccc;
+}
+.check_box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goods_image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rpx 0;
+}
+.goods_image image {
+    width: 90%;
+}
+.goods_details {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10rpx;
+}
+.goods_top {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 20rpx;
+    font-size: 24rpx;
+}
+.goods_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.goods_number {
+    display: flex;
+}
+.goods_price {
+    color: red;
+    font-size: 36rpx;
+}
+.goods_number .item {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 10rpx;
+    text-align: center;
+    line-height: 40rpx;
+}
+.goods_number .item:nth-child(1),
+.goods_number .item:nth-child(3) {
+    border: 1rpx solid #ccc;
+}
+.bottom_tool {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 90rpx;
+    display: flex;
+    border-top: 1rpx solid #ccc;
+    background-color: #fff;
+}
+.check_all {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total {
+    flex: 5;
+    text-align: right;
+    padding-right: 20rpx;
+}
+.total .total_price {
+    color: red;
+    font-size: 32rpx;
+    font-weight: 700;
+}
+.settlement {
+    flex: 3;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 36rpx;
+    color: #fff;
+    background-color: #069e91;
+    margin-top: -1rpx;
+}

@@ -1,0 +1,25 @@
+/* 全局导入图标样式文件 */
+
+@import './style/iconfont.wxss';
+
+/* 手写标签取消内外边距和内填充 */
+
+page,
+view,
+navigator,
+image,
+text,
+swiper,
+swiper-item {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+page {
+    font-size: 28rpx;
+}
+
+image {
+    width: 100%;
+}

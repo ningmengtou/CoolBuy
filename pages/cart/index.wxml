@@ -1,0 +1,69 @@
+<!-- 收货地址 -->
+<view class="revice_address_row">
+    <!-- 当收货地址不存在按钮显示按钮 这里即使是空对象也是返回true所有要判断对象的属性是否存在 -->
+    <view class="address_btn" wx:if="{{!address.userName}}">
+        <button type="primary" plain bindtap="handleChooseAddress">填写收货地址</button>
+    </view>
+    <!-- 收货地址存在则显示收货地址 -->
+    <view wx:else class="address_info">
+        <view class="name_tel">
+            <text>收货人：{{address.userName}}</text>
+            <text>电话：{{address.telNumber}}</text>
+        </view>
+        <view>
+            {{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}
+        </view>
+    </view>
+</view>
+<!-- 购物车内容 -->
+<view class="cart_content">
+    <view class="cart_title">购物车</view>
+    <!-- 判断cart数组的长度是否为0来决定显示商品 -->
+    <block wx:if="{{cart.length!==0}}">
+        <view class="cart_list" wx:for="{{cart}}" wx:key="goods_id" wx:if="{{cart.length>0}}">
+            <view class="check_box">
+                <checkbox-group bindchange="handleItemChange" data-id="{{item.goods_id}}">
+                    <checkbox checked="{{item.status}}"></checkbox>
+                </checkbox-group>
+            </view>
+            <navigator class="goods_image">
+                <image src="{{item.goods_small_logo}}" mode="widthFix" />
+            </navigator>
+            <view class="goods_details">
+                <view class="goods_top">{{item.goods_name}}</view>
+                <view class="goods_bottom">
+                    <view class="goods_price">￥{{item.goods_price}}</view>
+                    <view class="goods_number">
+                        <view class="item" bindtap="numberChange" data-info="-1" data-id="{{item.goods_id}}">
+                            -
+                        </view>
+                        <view class="item">{{item.num}}</view>
+                        <view class="item" bindtap="numberChange" data-info="+1" data-id="{{item.goods_id}}">
+                            +
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+    <!-- 购物车内没有商品就显示购物车空的图片 -->
+    <block wx:else>
+        <image src="/icons/cart.jpg" mode="widthFix"/>
+    </block>
+</view>
+<!-- 底部工具栏 -->
+<view class="bottom_tool">
+    <view class="check_all">
+        <checkbox-group bindchange="handleAllChange">
+            <checkbox checked="{{allChecked}}">全选</checkbox>
+        </checkbox-group>
+    </view>
+    <view class="total">
+        <view class="total_top">
+            合计：
+            <text class="total_price">￥{{totalPrice}}</text>
+        </view>
+        <view class="total_bottom">包含运费</view>
+    </view>
+    <view class="settlement" bindtap="handlePay">结算({{totalNum}})</view>
+</view>

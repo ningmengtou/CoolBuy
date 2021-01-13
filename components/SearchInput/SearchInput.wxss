@@ -1,0 +1,27 @@
+/* components/SearchInput/SearchInput.wxss */
+
+.search_input {
+    position: relative;
+    height: 8vh;
+    width: 100%;
+    background-color: #069e91;
+}
+
+.search_navigator {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 5vh;
+    top: 1.5vh;
+    left: 5vw;
+    background-color: #fff;
+    color: #999;
+    border-radius: 20rpx;
+}
+
+.input {
+    text-align: center;
+    font-size: 30rpx;
+}

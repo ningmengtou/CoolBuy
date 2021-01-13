@@ -1,0 +1,50 @@
+.collect_main {
+    background-color: #d3d4d5;
+}
+
+.collect_sort {
+    display: flex;
+    margin-top: 10rpx;
+}
+
+.sort_item {
+    margin: 10rpx;
+    padding: 15rpx;
+    border: 1rpx solid #ccc;
+    background-color: #fff;
+}
+
+.collect_sort .sort_item:nth-child(1) {
+    color: red;
+    border: 1rpx solid red;
+}
+
+.collect_content {
+    display: flex;
+    border-bottom: 1rpx solid #ccc;
+    padding: 10rpx 0;
+    background-color: #fff;
+}
+
+.goods_img {
+    flex: 3;
+}
+
+.goods_content {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20rpx;
+}
+
+.goods_name {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.goods_price {
+    color: red;
+}

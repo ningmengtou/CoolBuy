@@ -1,0 +1,4 @@
+button {
+    width: 70vw!important;
+    margin-top: 20rpx;
+}

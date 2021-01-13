@@ -1,0 +1,35 @@
+.first_tab navigator {
+    display: flex;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.first_tab navigator image {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rpx;
+}
+
+.first_tab navigator .tab_text {
+    flex: 6;
+}
+
+.tab_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40rpx 20rpx;
+}
+
+.goods_name {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.goods_price {
+    font-size: 40rpx;
+    color: red;
+}
